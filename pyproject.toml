@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "skale.py"
+version = "0.0.1"
+authors = [
+  { name="Sawyer Cutler", email="sawyer@dirtroad.dev" },
+]
+description = "A python package to simplify using the SKALE Network"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Dirt-Road-Develompent/skale.py"
+"Bug Tracker" = "https://github.com/Dirt-Road-Develompent/skale.py/issues"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src"
+]
